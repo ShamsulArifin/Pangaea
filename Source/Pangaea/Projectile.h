@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Projectile.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class PANGAEA_API AProjectile : public AActor
 {
 	GENERATED_BODY()
