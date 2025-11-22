@@ -25,7 +25,7 @@ APlayerAvatar::APlayerAvatar()
 	//Create the camera spring arm component
 	_springArmComponent = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	_springArmComponent->SetupAttachment(RootComponent);
-	_springArmComponent->SetUsingAbsoluteLocation(true);
+	_springArmComponent->SetUsingAbsoluteRotation(true);
 	_springArmComponent->TargetArmLength = 800.0f;
 	_springArmComponent->SetRelativeRotation(FRotator(-60.0f, 0.0f, 0.0f));
 	_springArmComponent->bDoCollisionTest = false;
