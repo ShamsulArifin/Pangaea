@@ -3,6 +3,7 @@
 
 #include "PlayerAvatar.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "PlayerAvaterAnimInstance.h"
 
 // Sets default values
 APlayerAvatar::APlayerAvatar()
@@ -47,6 +48,9 @@ void APlayerAvatar::BeginPlay()
 void APlayerAvatar::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	UPlayerAvaterAnimInstance* animInst = Cast<UPlayerAvaterAnimInstance>(GetMesh()->GetAnimInstance());
+	animInst->Speed = GetCharacterMovement()->Velocity.Size2D();
 
 }
 
