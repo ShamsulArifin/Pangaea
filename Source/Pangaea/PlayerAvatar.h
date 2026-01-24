@@ -35,7 +35,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	int _HealthPoints;
-	float _AttaclCountingDown;
+	float _AttackCountingDown;
 
 public:	
 	// Called every frame

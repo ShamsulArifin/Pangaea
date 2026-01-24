@@ -73,6 +73,8 @@ protected:
 	void OnTouchTriggered();
 	void OnTouchReleased();
 
+	void OnAttackPressed();
+
 };
 
 
